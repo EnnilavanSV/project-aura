@@ -1,0 +1,12 @@
+# Node Modules (Heavy libraries)
+node_modules/
+client/node_modules/
+server/node_modules/
+
+# Environment Variables (Database passwords)
+.env
+client/.env
+server/.env
+
+# Build outputs
+client/dist/
