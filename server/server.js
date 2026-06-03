@@ -5,6 +5,7 @@ import cors from 'cors';
 import mongoose from 'mongoose';
 import authRoutes from './routes/auth.js' //authRoutes : router - alias
 import userRoutes from './routes/user.js' //userRoutes : router - alias
+import promptRoutes from './routes/prompts.js' //promptRoutes ; router - alias
 
 //Initialize the Express Application
 const app = express(); //app is a instance name which will be used when we nee the sever something to do
@@ -18,7 +19,8 @@ app.use(express.json()); //Allows the data to understand JSON data
 
 //new connection routes
 app.use('/api/auth', authRoutes); //if someone visits this url.they will be redirected to authroutes hallway
-app.use('/api/user', userRoutes); //if someone visits this url.they will be redirected to  userrouts hallway
+app.use('/api/user', userRoutes); //if someone visits this url.they will be redirected to userroutes hallway
+app.use('/api/prompts', promptRoutes);  //if someone visits this url.they will be redirected to promptroutes hallway
 
 //Data base connection
 mongoose.connect(process.env.MONGO_URI)
