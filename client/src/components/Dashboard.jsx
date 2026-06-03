@@ -184,7 +184,7 @@ const Dashboard = () => {
                                         </button>
                                     </div>
                                 </div>
-                                <div className="bg-gray-900 p-3 rounded border border-gray-700 flex-grow overflow-hidden relative">
+                                <div className="bg-gray-900 p-3 rounded border border-gray-700 grow overflow-hidden relative">
                                     <p className="text-gray-400 text-sm font-mono whitespace-pre-wrap line-clamp-4">
                                         {prompt.content}
                                     </p>
